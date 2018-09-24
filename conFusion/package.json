@@ -11,32 +11,16 @@
   },
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@angular/animations": "^6.0.6",
-    "@angular/cdk": "^6.2.1",
-    "@angular/common": "^6.0.3",
-    "@angular/compiler": "^6.0.3",
-    "@angular/core": "^6.0.3",
-    "@angular/flex-layout": "^6.0.0-beta.18",
-    "@angular/forms": "^6.0.3",
-    "@angular/http": "^6.0.3",
-    "@angular/material": "^6.2.1",
-=======
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
     "@angular/compiler": "^6.0.3",
     "@angular/core": "^6.0.3",
     "@angular/forms": "^6.0.3",
     "@angular/http": "^6.0.3",
->>>>>>> df3de2a864a7a909d8c7ffabc67b521a4693b283
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
-<<<<<<< HEAD
-    "hammerjs": "^2.0.8",
-=======
->>>>>>> df3de2a864a7a909d8c7ffabc67b521a4693b283
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -61,8 +45,4 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> df3de2a864a7a909d8c7ffabc67b521a4693b283
