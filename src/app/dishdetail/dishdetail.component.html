@@ -16,8 +16,7 @@
             </mat-card-header>
             <img mat-card-image src={{dish.image}} alt={{dish.name}}>
             <mat-card-content>
-              <p>{{dish.description}}
-              </p>
+              <p>{{dish.description}}</p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button>LIKE</button>
@@ -28,13 +27,15 @@
       </div>
 
       <div class="dishDetail" fxFlex="40" fxFlexAlign="start">
+        <mat-list *ngIf="dish">
         <h1>Comments</h1>
-        <div *ngFor="let comment of comments">
-          <p>{{comment.comment}}</p>
-          <p>{{comment.rating}} Stars</p>
-          <p>{{comment.author}} {{comment.date | date : format : longDate}}</p>
-          <br>
-        </div>
+          <mat-list-item *ngFor="let comment of dish.comments">
+            <p mat-line>{{comment.comment}}</p>
+            <p mat-line>{{comment.rating}} Stars</p>
+            <p mat-line>  
+              <span> --{{comment.author}} {{comment.date | date : format : longDate}}</span></p>
+            <br>
+          </mat-list-item>
+        </mat-list>
       </div>
-
     </div>

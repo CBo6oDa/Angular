@@ -11,19 +11,13 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-<<<<<<< HEAD
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DishdetailComponent
-=======
-@NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent
->>>>>>> df3de2a864a7a909d8c7ffabc67b521a4693b283
+
   ],
   imports: [
     BrowserModule,
