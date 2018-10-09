@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { DishService } from '../services/dish.service';
+import { LeaderService } from '../services/leader.service'; 
+import { Leader } from '../shared/leader'; 
 
 @Component({
   selector: 'app-menu',
@@ -21,6 +23,5 @@ export class MenuComponent implements OnInit {
 
   onSelect(dish: Dish) {
     this.selectedDish = dish;
-    console.log("");
   }
 }
