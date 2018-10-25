@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild,Inject} from '@angular/core';
 import { Dish } from '../shared/dish';
 import { DishService } from '../services/dish.service';
 import { Params, ActivatedRoute } from '@angular/router';
@@ -26,7 +26,8 @@ export class DishdetailComponent implements OnInit {
     private dishService: DishService,
     private route: ActivatedRoute,
     private location: Location,
-    private com: FormBuilder) { this.createForm();}
+    private com: FormBuilder,
+    @Inject('BaseURL') private BaseURL) { this.createForm();}
  
   createForm(){
     this.commentForm = this.com.group({
@@ -100,5 +101,6 @@ export class DishdetailComponent implements OnInit {
       comment: ''
     });
     this.commentFormDirective.resetForm();
+    console.log('');
   }
 }
