@@ -14,7 +14,7 @@
     </div>  
 
       <div fxFlex="40">
-        <div fxFlex *ngIf="dish" [@visibility]="visibility">
+        <div fxFlex *ngIf="dish" [@visibility]="visibility" [@expand]>
           <mat-card>
             <mat-card-header>
               <mat-card-title>
@@ -37,7 +37,7 @@
       </div>
 
 
-      <div fxFlexOffset="20px" class="dishDetail form-size" fxFlex="40" fxFlexAlign="start" [@visibility]="visibility">
+      <div fxFlexOffset="20px" class="dishDetail form-size" fxFlex="40" fxFlexAlign="start" [@visibility]="visibility" [@expand]>
         <p>{{ commentForm.value | json }} {{ commentForm.status | json }}</p>
     
         <mat-list *ngIf="dish">
