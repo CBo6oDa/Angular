@@ -95,6 +95,7 @@ export class DishdetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  
   onSubmit() {
     this.comment = this.commentForm.value;
     this.comment.date = Date.now().toString();
@@ -111,6 +112,5 @@ export class DishdetailComponent implements OnInit {
       comment: ''
     });
     this.commentFormDirective.resetForm();
-    console.log('');
   }
 }
