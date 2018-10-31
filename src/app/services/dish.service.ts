@@ -9,8 +9,8 @@ import { ProcessHTTPMsgService } from './process-httpmsg.service';
 @Injectable({
   providedIn: 'root'
 })
-export class DishService {
 
+export class DishService {
   constructor(private http: HttpClient,
     private processHTTPMsgService: ProcessHTTPMsgService) { }
 
